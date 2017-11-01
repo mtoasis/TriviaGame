@@ -19,17 +19,49 @@
 			Trivia Game
 		</div>
 
-		<button id="start_btn">
-			Start
-		</button>
+		<div class="opening_screen">
 
-		<div class="timer">
-			30
+			<span id="opening_text">
+				Press Start to Begin
+			</span>
+
+			<button id="start_btn">
+				Start
+			</button>
+
+			<span id="instruction">
+				<p>Instruction:</p>
+				<p>Choose your answer before time runs out</p>
+			</span>
+
+
 		</div>
 
+		<div class="footer">
 
+			<div class="timer">
+				<span class="timer_text">
+					30
+				</span>
+			</div>
 
-	</div>
+			<div class="score_div">
+				<span class="count">
+				Correct Answer: 0				
+				</span>
+				<div class="clear"></div>
+				<span class="count">
+				Incorrect Answer: 0
+				</span>
+			</div>
+		</div>
+
+		<div class="previous_answer">
+
+		<span id="prev_ans">
+		</span>
+
+		</div>
 
 
 	<script src="asset/javascript/logic.js"></script>
