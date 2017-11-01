@@ -9,6 +9,7 @@ var time_left;
 var question_number_count =1;
 var time_interval;
 var correct_answer;
+var time_up;
 
 
 $("#start_btn").on("click",function(){
@@ -80,9 +81,10 @@ $(document).on("click",".answer_buttons",function(){
 
 
 function timer(){
-	time_left=30;
+	time_left=5;
 	time_interval = setInterval(time_decrease, 1000);
-	setTimeout(timeUp, 1000 * (time_left));
+	time_up = setTimeout(timeUp, 1000 * 5);
+	
 
 	function time_decrease (){
 		time_left -=1;
@@ -93,7 +95,7 @@ function timer(){
 }
 
 function timeUp(){
-	clearInterval(time_interval);
+	clearInterval(time_interval);	
 	
 	$(".question_screen").remove();
 	$(".opening_screen").children("#opening_text").text("Game Over");
@@ -108,6 +110,9 @@ function clear(){
 	$("#prev_ans").text("Correct answer was:   "+correct_answer);	
 	$(".question_screen").remove();
 	generate_question()
+	clearInterval(time_interval);
+	clearTimeout(time_up);
+	timer();
 
 }
 
