@@ -5,9 +5,10 @@
   <head>
 
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Trivia Game</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/style.css">
 
 </head>
@@ -15,21 +16,52 @@
 <body>
 
 	<div class="container">
-		<div class="header">
-			Trivia Game
+
+		<div class="opening_screen">
+
+			<span id="opening_text">
+				Press Start to Begin
+			</span>
+
+			<button id="start_btn">
+				Start
+			</button>
+			<div id="ins_div">
+			<span id="instruction">
+				<p>Instruction:</p>
+				<p>10 Questions will be given.</p>
+				<p>Choose your answer before time runs out</p>
+			</span>
+			</div>
+
+
 		</div>
 
-		<button id="start_btn">
-			Start
-		</button>
+		<div class="footer">
 
-		<div class="timer">
-			30
+			<div class="timer">
+				<span class="timer_text">
+					30
+				</span>
+			</div>
+
+			<div class="score_div">
+				<span class="count">
+				Correct Answer: 0				
+				</span>
+				<div class="clear"></div>
+				<span class="count">
+				Incorrect Answer: 0
+				</span>
+			</div>
 		</div>
 
+		<div class="previous_answer">
 
+		<span id="prev_ans">
+		</span>
 
-	</div>
+		</div>
 
 
 	<script src="asset/javascript/logic.js"></script>

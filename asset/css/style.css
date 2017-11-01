@@ -1,9 +1,9 @@
 .container{
 
-	background-color: blue;
-	margin:5% 10%;
-	width:1000px;
-	height:600px;
+	border:dotted 5px blue;
+	margin:50px 50px;
+	width:800px;
+	height:750px;
 }
 
 .header{
@@ -17,21 +17,159 @@
 #start_btn{
 	width:300px;
 	height:100px;
-	font-size: 20px;
+	font-size: 40px;
 	background-color: white;
 	border:5px solid red;
 	position: absolute;
-	top:40%;
-	left:45%;
+	top:300px;
+	left:240px;
 	cursor:pointer;
+}
 
+.opening_screen{
+	background-color:black;
+	opacity:0.7;
+	width:100%;
+	height:100%;
+	margin:0;
+	position: relative;
+	z-index:2;
+	top:0px;
+	left:0px;
+	color:white;
+	font-size:20px;
+}
+
+#opening_text{
+	font-size: 35px;
+	color:white;
+	position:relative;
+	top:200px;
+	left:230px;
+}
+
+#instruction{
+	font-size: 25px;
+	color:white;
+	position:absolute;
+	top:430px;
+	left:180px;
 }
 
 .timer{
-	font-size: 30px;
-	color:white;
-	position: absolute;
-	right:400px;
-	top:100px;
-	z-index: 1;
+	position: relative;
+	left:0px;
+	top:0px;
+	width:395px;
+	height:80px;
+	border-right:dotted blue 5px;
 }
+
+.timer_text{
+	position:relative;
+	font-size: 35px;
+	color:black;
+	top:10px;
+	left:160px;
+}
+
+.score_div{
+	position: relative;
+	left:400px;
+	top:-80px;
+	width:395px;
+	height:80px;
+}
+
+.count{
+	font-size: 25px;
+	position:relative;
+	left:50px;
+}
+
+
+
+.question_screen{
+	background-color:#A9A9A9;
+	width:600px;
+	height:500px;
+	position: relative;
+	z-index:2;
+	top:50px;
+	left:100px;
+	color:white;
+	font-size:20px;
+}
+
+
+.clear{
+	clear:both;
+}
+
+.question_number{
+	position:relative;
+	top:10px;
+	left:195px;
+	font-size:35px;
+}
+
+.question_text{
+	font-size:20px;
+	position:absolute;
+	top:80px;
+	left:100px;
+	border:double white 3px;
+	width:410px;
+	height:150px;
+}
+
+.answer_buttons{
+	border:solid 3px red;
+	background-color: white;
+	width:420px;
+	height:50px;
+	margin:5px 5px ;
+	cursor:pointer;
+}
+
+.answer_buttons:hover{
+	background-color:#FFB6C1;
+	font-weight: bold; 
+}
+
+.question_answers{
+	position:absolute;
+	left:90px;
+	top:250px;
+}
+
+.footer{
+	border-top:dotted 5px blue;
+	color:black;
+	position:absolute;
+	top:720px;
+	left:65px;
+	width:800px;
+	height:80px;
+
+}
+
+.previous_answer{
+	border-top:dotted 5px blue;
+	color:black;
+	position:absolute;
+	top:650px;
+	left:65px;
+	width:800px;
+	height:80px;
+
+}
+
+#prev_ans{
+	position:relative;
+	font-size: 25px;
+	color:black;
+	top:10px;
+	left:100px;
+}
+
