@@ -81,9 +81,9 @@ $(document).on("click",".answer_buttons",function(){
 
 
 function timer(){
-	time_left=5;
+	time_left=30;
 	time_interval = setInterval(time_decrease, 1000);
-	time_up = setTimeout(timeUp, 1000 * 5);
+	time_up = setTimeout(timeUp, 1000 * (time_left));
 	
 
 	function time_decrease (){
